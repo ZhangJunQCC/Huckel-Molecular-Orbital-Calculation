@@ -4,16 +4,16 @@ CODEINFO = -DCODEMAJORVER=0 \
 	   -DCODELINUX 
 
 CXX     = g++
-CXXFLAG =-O3 --std=c++0x -fopenmp  -static-libstdc++ -static-libgcc -static
+CXXFLAG =-O3 --std=c++0x
 CC      = gcc
 CCFLAG  =-O3 -fopenmp -Wall
 
 INCDIR  =./include
-LIBDIR  =./lib
+LIBDIR  =./lib        # Lapack positions!
 SRCS    =./src
 BINS    =./bin
 INCS    =-I$(INCDIR) -I$(SRCS) 
-LIBS    =-L$(LIBDIR) -llapack -ltmglib -lrefblas -lgfortran -lquadmath
+LIBS    =-L$(LIBDIR) -llapack -ltmglib -lrefblas # Lapack link options!
 OBJS    =./obj
 DEPS    =./depend
 
