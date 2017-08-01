@@ -88,7 +88,5 @@ We suggest to use the following Graphivz command to render styrene.dot:
    >>>>>>  sfdp styrene.dot -Tpdf -o styrene.pdf
 
 ```
-
-You can change `pdf` to `svg` or any formats that `Graphviz` supports.
-
-
+You can change `pdf` to `svg` or any formats that `Graphviz` supports. The rendered graph is given below:
+![](bin/styrene.png)
