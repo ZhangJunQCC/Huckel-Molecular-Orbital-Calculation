@@ -1,1 +1,1 @@
-# For obj files.
+# For objective files.
