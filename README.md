@@ -16,7 +16,7 @@ Everything should go well.
 
 If you do not want to compile `HMO`, you can go to my website to get the excutables.
 
-[HMO on my website](http://www.zhjun-sci.com/xx.php)
+[HMO on my website](http://www.zhjun-sci.com/software-others.php)
 
 
 ## Example
