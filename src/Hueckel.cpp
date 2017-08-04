@@ -272,7 +272,7 @@ void Hueckel::GenerateMolecularGraph(const string& fnprefix,
     for(int i = 0; i < natoms; ++i)
     {
         const double electrondensity = eletrondensities[i];
-        fprintf(fd, "    \"C%d\" [label=\"%d (%.5f)\", shape=circle];\n", i+1, i+1, electrondensity);
+        fprintf(fd, "    \"C%d\" [label=\"%d (%.5f)\", fontsize=15, width=1.3, shape=circle];\n", i+1, i+1, electrondensity);
     }
     fprintf(fd, "    // Connection information\n");
     for(int i = 0, ij = 0; i < natoms; ++i)
@@ -282,7 +282,7 @@ void Hueckel::GenerateMolecularGraph(const string& fnprefix,
             if((i != j) && (upperadjacencymatrix[ij] != 0))
             {
                 const double bondorder = bondorders[ij];
-                fprintf(fd, "    \"C%d\" -- \"C%d\" [label=\"%.5f\", color=black];\n", i+1, j+1, bondorder);
+                fprintf(fd, "    \"C%d\" -- \"C%d\" [label=\"%.5f\", fontsize=15, color=black];\n", i+1, j+1, bondorder);
             }
         }
     }
