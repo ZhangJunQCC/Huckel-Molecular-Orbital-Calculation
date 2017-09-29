@@ -2,7 +2,7 @@
 
 A program to perform Huckel molecular orbital caluclations on molecules.
 
-`HMO` is a light-weighted program to perform Huckel molecular orbital caluclations on molecules. It is very easy to use and can generate `Graphviz` input files for the visualization of results.
+`HMO` is a light-weighted program to perform Huckel molecular orbital calculations on molecules. It is very easy to use and can generate `Graphviz` input files for the visualization of results.
 
 ## Compiling HMO
 
@@ -12,9 +12,9 @@ make
 ```
 Everything should go well.
 
-## Excutables
+## Executables
 
-If you do not want to compile `HMO`, you can go to my website to get the excutables.
+If you do not want to compile `HMO`, you can go to my website to get the executables.
 
 [HMO on my website](http://www.zhjun-sci.com/software-others.php)
 
@@ -43,7 +43,7 @@ An example input file is given in  `bin/styrene.inp`:
 In the first line,
 
 * `1.8` is a threshold, meaning that two atoms are considered as bonded when their distance is less than `1.8` Angstrom.
-* `0` is the charge of the moledcule, which can be `0`, `+1`, `-2`, etc.
+* `0` is the charge of the molecule, which can be `0`, `+1`, `-2`, etc.
 
 The following lines are the coordinates of carbon atoms. Do **NOT** write coordinates of other atoms.
 
@@ -81,7 +81,7 @@ Atomic Properties:
            5           1.00000000           1.28257491
 ```
 
-You can also find a file called `styrene.dot`, this is an input file for `Graphviz`, which can visualize our results. Acutally at the end of `styrene.out`, there is a suggested command to generate the pdf file (Assume `Graphviz` has been installed. If not, see [here](http://www.graphviz.org/)):
+You can also find a file called `styrene.dot`, this is an input file for `Graphviz`, which can visualize our results. Actually, at the end of `styrene.out`, there is a suggested command to generate the pdf file (Assume `Graphviz` has been installed. If not, see [here](http://www.graphviz.org/)):
 ```
 We suggest to use the following Graphivz command to render styrene.dot:
 
